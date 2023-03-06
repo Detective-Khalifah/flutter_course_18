@@ -9,11 +9,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        accentColor: Colors.deepPurple,
+        primarySwatch: Colors.deepOrange,
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: Text("EasyList"),
         ),
-        body: ProductManager(),
+        body: ProductManager('Food Tester'),
       ),
     );
   }
